@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://young-band-ba97.laodayizhi.workers.dev/ads-widget.js"></script>
+<title>搜索-精选剧集片库-高清剧集大全</title>
+    <meta name="description" content="搜索精选剧集片库，快速查找电视剧推荐、热播剧集和高分电视剧。" />
+    <meta name="keywords" content="影视搜索,推荐电视剧大全,精选剧集片库,电视剧推荐,全集播放,高分电视剧,热播剧集" />
+    <link rel="stylesheet" href="./assets/site.css" />
+</head>
+<body>
+    <header class="site-header">
+        <div class="header-inner">
+            <a class="brand" href="./index.html" aria-label="高清剧集大全">
+                <span class="brand-mark">剧</span>
+                <span class="brand-text">
+                    <strong>高清剧集大全</strong>
+                    <em>精选剧集片库</em>
+                </span>
+            </a>
+            <nav class="desktop-nav" aria-label="主导航">
+                    <a href="./index.html" class="nav-link">首页</a>
+                    <a href="./categories.html" class="nav-link">分类</a>
+                    <a href="./ranking.html" class="nav-link">排行榜</a>
+                    <a href="./search.html" class="nav-link is-active">搜索</a>
+            </nav>
+            <form class="header-search" action="./search.html" method="get">
+                <input type="search" name="q" placeholder="搜索片名、地区、年份" aria-label="搜索" />
+                <button type="submit">搜索</button>
+            </form>
+            <button class="mobile-menu-button" type="button" data-mobile-toggle aria-label="展开菜单">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+        <div class="mobile-nav" data-mobile-panel>
+                    <a href="./index.html" class="mobile-nav-link">首页</a>
+                    <a href="./categories.html" class="mobile-nav-link">分类</a>
+                    <a href="./ranking.html" class="mobile-nav-link">排行榜</a>
+                    <a href="./search.html" class="mobile-nav-link is-active">搜索</a>
+            <form class="mobile-search" action="./search.html" method="get">
+                <input type="search" name="q" placeholder="搜索片名、地区、年份" aria-label="移动端搜索" />
+                <button type="submit">搜索</button>
+            </form>
+        </div>
+    </header>
+    <main class="page-main sub-page">
+        <section class="page-hero small-hero">
+            <p class="eyebrow">片库搜索</p>
+            <h1>搜索精选剧集片库</h1>
+            <p>可按片名、地区、类型、年份、标签快速查找内容。</p>
+        </section>
+        <section class="search-panel">
+            <form class="search-page-form" action="./search.html" method="get">
+                <input id="searchPageInput" type="search" name="q" placeholder="输入片名、地区、类型、年份" aria-label="搜索影片" />
+                <button type="submit">搜索</button>
+            </form>
+            <div class="search-tabs">
+                <button type="button" data-search-chip="剧集">剧集</button>
+                <button type="button" data-search-chip="电影">电影</button>
+                <button type="button" data-search-chip="中国">中国</button>
+                <button type="button" data-search-chip="日本">日本</button>
+                <button type="button" data-search-chip="2026">2026</button>
+            </div>
+        </section>
+        <section class="content-section">
+            <div class="section-heading">
+                <div>
+                    <h2>搜索结果</h2>
+                    <p id="searchHint">输入关键词后查看匹配内容。</p>
+                </div>
+            </div>
+            <div id="searchResults" class="movie-grid wide"></div>
+        </section>
+    </main>
+    <footer class="site-footer">
+        <div class="footer-inner">
+            <div>
+                <strong>高清剧集大全</strong>
+                <p>推荐电视剧大全整理多地区优质剧集内容，覆盖热播剧、高分剧和经典剧。</p>
+            </div>
+            <div class="footer-links">
+                <a href="./index.html">首页</a>
+                <a href="./categories.html">分类</a>
+                <a href="./ranking.html">排行榜</a>
+                <a href="./category-hot-dramas.html">热播好剧</a><a href="./category-selected-series.html">精选剧集</a><a href="./category-premium-library.html">高分片库</a><a href="./category-urban-emotion.html">都市情感</a><a href="./category-mystery-crime.html">悬疑推理</a><a href="./category-costume-legend.html">古装传奇</a>
+            </div>
+        </div>
+    </footer>
+    <script src="./assets/site.js"></script>
+    <script src="./assets/search-data.js"></script>
+<script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "https://hm.baidu.com/hm.js?60fa60a3da050a73eefefaaebe0afaf5";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>
+</body>
+</html>
